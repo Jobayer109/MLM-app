@@ -12,9 +12,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // routes
-app.get("/", (req, res) => {
-  res.send("server is running");
-});
+app.use("/", require("./routes/routes"));
 
 // Server run
 const serverStart = async () => {
