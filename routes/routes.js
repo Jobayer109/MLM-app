@@ -1,20 +1,11 @@
 const express = require("express");
 const router = express.Router();
+const { getAllUsers, registerUser, loginUser, autoPull } = require("../controllers/controller");
 
-router.get("/", (req, res) => {
-  res.send("Welcome to MLM app");
-});
-
-router.post("/register", (req, res) => {
-  res.send("Register page created");
-});
-
-router.post("/login", (req, res) => {
-  res.send("Login page created");
-});
-
-router.post("/auto-pull", (req, res) => {
-  res.send("Auto pull created");
-});
+// routes
+router.get("/", getAllUsers);
+router.post("/register", registerUser);
+router.post("/login", loginUser);
+router.post("/auto-pull", autoPull);
 
 module.exports = router;
