@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/register" method="POST">
+  <label for="fullName">Full Name:</label>
+  <input type="text" id="fullName" name="fullName" required>  &nbsp;
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required> <br>
+
+  <label for="sponsorId">Sponsor ID:</label>
+  <input type="text" id="sponsorId" name="sponsorId" required> &nbsp;
+
+  <label for="sponsorName">Sponsor Name:</label>
+  <input type="text" id="sponsorName" name="sponsorName" required> <br>
+
+  <label for="position">Position:</label>
+  <select id="position" name="position">
+    <option value="1">Position 1</option>
+    <option value="2">Position 2</option>
+    <option value="3">Position 3</option>
+    <option value="4">Position 4</option>
+  </select> <br>
+
+  <button type="submit">Register</button>
+</form>
+
+</body>
+</html>
